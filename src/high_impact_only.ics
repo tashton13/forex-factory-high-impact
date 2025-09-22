@@ -1,0 +1,233 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//forex-factory-high-impact//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:High Impact Economic Events
+X-WR-TIMEZONE:America/Toronto
+BEGIN:VEVENT
+SUMMARY:⁂ AU RBA Gov Bullock Speaks
+DTSTART;TZID=America/New_York:20250921T210000
+DTEND;TZID=America/New_York:20250921T210000
+DTSTAMP:20250922T194213Z
+UID:147812
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/671-au-rba-gov-bullock-speaks
+URL:https://www.forexfactory.com/calendar/671-au-rba-gov-bullock-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ GE Flash Manufacturing PMI
+DTSTART;TZID=America/New_York:20250923T033000
+DTEND;TZID=America/New_York:20250923T033000
+DTSTAMP:20250922T194213Z
+UID:142209
+DESCRIPTION:Impact: High\n\nForecast: 50.0\n\nPrevious: 49.9\n\nView Event
+ : https://www.forexfactory.com/calendar/266-ge-flash-manufacturing-pmi
+URL:https://www.forexfactory.com/calendar/266-ge-flash-manufacturing-pmi
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ GE Flash Services PMI
+DTSTART;TZID=America/New_York:20250923T033000
+DTEND;TZID=America/New_York:20250923T033000
+DTSTAMP:20250922T194213Z
+UID:142210
+DESCRIPTION:Impact: High\n\nForecast: 49.5\n\nPrevious: 50.1\n\nView Event
+ : https://www.forexfactory.com/calendar/267-ge-flash-services-pmi
+URL:https://www.forexfactory.com/calendar/267-ge-flash-services-pmi
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ UK Flash Manufacturing PMI
+DTSTART;TZID=America/New_York:20250923T043000
+DTEND;TZID=America/New_York:20250923T043000
+DTSTAMP:20250922T194213Z
+UID:142212
+DESCRIPTION:Impact: High\n\nForecast: 47.1\n\nPrevious: 47.3\n\nView Event
+ : https://www.forexfactory.com/calendar/837-uk-flash-manufacturing-pmi
+URL:https://www.forexfactory.com/calendar/837-uk-flash-manufacturing-pmi
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ UK Flash Services PMI
+DTSTART;TZID=America/New_York:20250923T043000
+DTEND;TZID=America/New_York:20250923T043000
+DTSTAMP:20250922T194213Z
+UID:142211
+DESCRIPTION:Impact: High\n\nForecast: 53.4\n\nPrevious: 53.6\n\nView Event
+ : https://www.forexfactory.com/calendar/836-uk-flash-services-pmi
+URL:https://www.forexfactory.com/calendar/836-uk-flash-services-pmi
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US Flash Manufacturing PMI
+DTSTART;TZID=America/New_York:20250923T094500
+DTEND;TZID=America/New_York:20250923T094500
+DTSTAMP:20250922T194213Z
+UID:143935
+DESCRIPTION:Impact: High\n\nForecast: 52.2\n\nPrevious: 53.3\n\nView Event
+ : https://www.forexfactory.com/calendar/552-us-flash-manufacturing-pmi
+URL:https://www.forexfactory.com/calendar/552-us-flash-manufacturing-pmi
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US Flash Services PMI
+DTSTART;TZID=America/New_York:20250923T094500
+DTEND;TZID=America/New_York:20250923T094500
+DTSTAMP:20250922T194213Z
+UID:143947
+DESCRIPTION:Impact: High\n\nForecast: 54.0\n\nPrevious: 55.4\n\nView Event
+ : https://www.forexfactory.com/calendar/583-us-flash-services-pmi
+URL:https://www.forexfactory.com/calendar/583-us-flash-services-pmi
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US Fed Chair Powell Speaks
+DTSTART;TZID=America/New_York:20250923T123500
+DTEND;TZID=America/New_York:20250923T123500
+DTSTAMP:20250922T194213Z
+UID:147836
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/717-us-fed-chair-powell-speaks
+URL:https://www.forexfactory.com/calendar/717-us-fed-chair-powell-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ AU CPI y/y
+DTSTART;TZID=America/New_York:20250923T213000
+DTEND;TZID=America/New_York:20250923T213000
+DTSTAMP:20250922T194213Z
+UID:144089
+DESCRIPTION:Impact: High\n\nForecast: 2.9%\n\nPrevious: 2.8%\n\nView Event
+ : https://www.forexfactory.com/calendar/888-au-cpi-yy
+URL:https://www.forexfactory.com/calendar/888-au-cpi-yy
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ SZ SNB Monetary Policy Assessment
+DTSTART;TZID=America/New_York:20250925T033000
+DTEND;TZID=America/New_York:20250925T033000
+DTSTAMP:20250922T194213Z
+UID:140839
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/18-sz-snb-monetary-policy-assessment
+URL:https://www.forexfactory.com/calendar/18-sz-snb-monetary-policy-assess
+ ment
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ SZ SNB Policy Rate
+DTSTART;TZID=America/New_York:20250925T033000
+DTEND;TZID=America/New_York:20250925T033000
+DTSTAMP:20250922T194213Z
+UID:140840
+DESCRIPTION:Impact: High\n\nForecast: 0.00%\n\nPrevious: 0.00%\n\nView Eve
+ nt: https://www.forexfactory.com/calendar/834-sz-snb-policy-rate
+URL:https://www.forexfactory.com/calendar/834-sz-snb-policy-rate
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ SZ SNB Press Conference
+DTSTART;TZID=America/New_York:20250925T040000
+DTEND;TZID=America/New_York:20250925T040000
+DTSTAMP:20250922T194213Z
+UID:140841
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/163-sz-snb-press-conference
+URL:https://www.forexfactory.com/calendar/163-sz-snb-press-conference
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US Final GDP q/q
+DTSTART;TZID=America/New_York:20250925T083000
+DTEND;TZID=America/New_York:20250925T083000
+DTSTAMP:20250922T194213Z
+UID:142551
+DESCRIPTION:Impact: High\n\nForecast: 3.3%\n\nPrevious: 3.3%\n\nView Event
+ : https://www.forexfactory.com/calendar/28-us-final-gdp-qq
+URL:https://www.forexfactory.com/calendar/28-us-final-gdp-qq
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US Unemployment Claims
+DTSTART;TZID=America/New_York:20250925T083000
+DTEND;TZID=America/New_York:20250925T083000
+DTSTAMP:20250922T194213Z
+UID:141468
+DESCRIPTION:Impact: High\n\nForecast: 235K\n\nPrevious: 231K\n\nView Event
+ : https://www.forexfactory.com/calendar/11-us-unemployment-claims
+URL:https://www.forexfactory.com/calendar/11-us-unemployment-claims
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ CA GDP m/m
+DTSTART;TZID=America/New_York:20250926T083000
+DTEND;TZID=America/New_York:20250926T083000
+DTSTAMP:20250922T194213Z
+UID:144964
+DESCRIPTION:Impact: High\n\nForecast: 0.1%\n\nPrevious: -0.1%\n\nView Even
+ t: https://www.forexfactory.com/calendar/29-ca-gdp-mm
+URL:https://www.forexfactory.com/calendar/29-ca-gdp-mm
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US Core PCE Price Index m/m
+DTSTART;TZID=America/New_York:20250926T083000
+DTEND;TZID=America/New_York:20250926T083000
+DTSTAMP:20250922T194213Z
+UID:142513
+DESCRIPTION:Impact: High\n\nForecast: 0.2%\n\nPrevious: 0.3%\n\nView Event
+ : https://www.forexfactory.com/calendar/85-us-core-pce-price-index-mm
+URL:https://www.forexfactory.com/calendar/85-us-core-pce-price-index-mm
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

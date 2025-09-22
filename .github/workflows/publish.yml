@@ -1,0 +1,104 @@
+name: Update Forex Factory High Impact Calendar
+
+on:
+  schedule:
+    # Daily at 6 AM Toronto time (UTC-5, so 11 AM UTC)
+    - cron: "0 11 * * *"
+    # Saturday recheck at 6 AM Toronto time
+    - cron: "0 11 * * SAT"
+  # Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  update-calendar:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Run calendar filter script
+      run: |
+        cd src
+        python forex_calendar_filter.py
+        ls -la *.ics || echo "No ICS files found"
+    
+    - name: Setup Git configuration
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+    
+    - name: Deploy to gh-pages
+      run: |
+        # Create or switch to gh-pages branch
+        git fetch origin gh-pages:gh-pages || git checkout --orphan gh-pages
+        git checkout gh-pages
+        
+        # Clear existing content except .git
+        git rm -rf . || true
+        
+        # Copy the generated ICS file
+        cp src/high_impact_only.ics . 2>/dev/null || echo "Warning: ICS file not found"
+        
+        # Create a simple index.html for GitHub Pages
+        cat > index.html << 'EOF'
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Forex Factory High Impact Calendar</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+                .container { max-width: 600px; margin: 0 auto; }
+                .calendar-link { background: #f0f0f0; padding: 15px; border-radius: 5px; word-break: break-all; }
+                .updated { color: #666; font-size: 0.9em; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Forex Factory High Impact Calendar</h1>
+                <p>This is an automatically filtered calendar containing only high-impact economic events from Forex Factory.</p>
+                
+                <h2>Calendar Subscription URL:</h2>
+                <div class="calendar-link">
+                    <strong>https://tashton13.github.io/forex-factory-high-impact/high_impact_only.ics</strong>
+                </div>
+                
+                <h2>How to Subscribe:</h2>
+                <ol>
+                    <li>Copy the URL above</li>
+                    <li>In Google Calendar, click the "+" next to "Other calendars"</li>
+                    <li>Select "From URL"</li>
+                    <li>Paste the URL and click "Add calendar"</li>
+                </ol>
+                
+                <p class="updated">Last updated: $(date -u)</p>
+            </div>
+        </body>
+        </html>
+        EOF
+        
+        # Add and commit changes
+        git add .
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update high impact calendar - $(date -u)"
+          git push origin gh-pages
+        fi
+    
+    - name: Return to main branch
+      run: git checkout main

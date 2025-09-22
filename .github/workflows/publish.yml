@@ -45,20 +45,13 @@ jobs:
         git config --global user.name 'GitHub Actions'
         git config --global user.email 'actions@github.com'
     
-    - name: Deploy to gh-pages
+    - name: Prepare deployment files
       run: |
-        # Create or switch to gh-pages branch
-        git fetch origin gh-pages:gh-pages || git checkout --orphan gh-pages
-        git checkout gh-pages
-        
-        # Clear existing content except .git
-        git rm -rf . || true
-        
-        # Copy the generated ICS file
-        cp src/high_impact_only.ics . 2>/dev/null || echo "Warning: ICS file not found"
+        mkdir -p deploy
+        cp src/high_impact_only.ics deploy/ || echo "Warning: ICS file not found"
         
         # Create a simple index.html for GitHub Pages
-        cat > index.html << 'EOF'
+        cat > deploy/index.html << 'EOF'
         <!DOCTYPE html>
         <html>
         <head>
@@ -95,15 +88,10 @@ jobs:
         </body>
         </html>
         EOF
-        
-        # Add and commit changes
-        git add .
-        if git diff --staged --quiet; then
-          echo "No changes to commit"
-        else
-          git commit -m "Update high impact calendar - $(date -u)"
-          git push origin gh-pages
-        fi
     
-    - name: Return to main branch
-      run: git checkout main
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./deploy
+        force_orphan: true

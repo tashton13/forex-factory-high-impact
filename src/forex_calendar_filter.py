@@ -23,18 +23,40 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Configuration
-FOREX_FACTORY_ICS_URL = "https://nfs.faireconomy.media/ff_calendar_thisweek.ics"
-OUTPUT_FILE = "high_impact_only.ics"
-CALENDAR_NAME = "High Impact Economic Events"
-PRODID = "-//forex-factory-high-impact//EN"
+FOREX_FACTORY_BASE_URL = "https://nfs.faireconomy.media/ff_calendar_"
+OUTPUT_FILE = "enhanced_economic_calendar.ics"
+CALENDAR_NAME = "Enhanced Economic Events (3-Week Outlook)"
+PRODID = "-//forex-factory-enhanced//EN"
 
-# High impact indicators (case-insensitive regex patterns)
-HIGH_IMPACT_PATTERNS = [
+# High impact indicators (case-insensitive regex patterns) - RED FOLDER ITEMS
+RED_FOLDER_PATTERNS = [
     r"impact:\s*high",
-    r"high\s*impact",
+    r"high\s*impact", 
     r"red\s*folder",
     r"red\s*impact",
     r"\bred\b"
+]
+
+# Medium impact indicators (yellow/orange folder) - SELECTIVE KEYWORDS
+MEDIUM_IMPACT_PATTERNS = [
+    r"impact:\s*medium",
+    r"medium\s*impact",
+    r"yellow\s*folder", 
+    r"orange\s*folder",
+    r"\byellow\b",
+    r"\borange\b"
+]
+
+# VIP Keywords for medium impact events (case-insensitive)
+VIP_KEYWORDS = [
+    r"\btrump\b",
+    r"\bfomc\b", 
+    r"\bopec\b",
+    r"president\s+lagarde",
+    r"lagarde\b",
+    r"gov\s+bailey",
+    r"governor\s+bailey",
+    r"\bbailey\b"
 ]
 
 
@@ -51,8 +73,37 @@ def fetch_calendar_data(url: str) -> str:
         raise
 
 
-def is_high_impact_event(event: Event) -> bool:
-    """Check if an event is high impact based on summary and description."""
+def fetch_multi_week_calendar_data(weeks: int = 3) -> str:
+    """Fetch multiple weeks of calendar data and combine them."""
+    all_calendar_data = []
+    
+    # Week identifiers for Forex Factory
+    week_urls = [
+        f"{FOREX_FACTORY_BASE_URL}thisweek.ics",
+        f"{FOREX_FACTORY_BASE_URL}nextweek.ics",
+        f"{FOREX_FACTORY_BASE_URL}week3.ics"
+    ]
+    
+    for i, url in enumerate(week_urls[:weeks]):
+        try:
+            logger.info(f"Fetching week {i+1} calendar data...")
+            data = fetch_calendar_data(url)
+            all_calendar_data.append(data)
+        except Exception as e:
+            logger.warning(f"Failed to fetch week {i+1}: {e}")
+            # Continue with other weeks even if one fails
+            continue
+    
+    if not all_calendar_data:
+        raise Exception("Failed to fetch any calendar data")
+    
+    # Combine all calendar data (we'll parse and merge them properly later)
+    logger.info(f"Successfully fetched {len(all_calendar_data)} weeks of calendar data")
+    return all_calendar_data
+
+
+def is_red_folder_event(event: Event) -> bool:
+    """Check if an event is red folder (high impact)."""
     text_to_check = ""
     
     # Get summary/title
@@ -63,12 +114,57 @@ def is_high_impact_event(event: Event) -> bool:
     if 'description' in event:
         text_to_check += str(event['description']) + " "
     
-    # Check against high impact patterns
+    # Check against red folder patterns
     text_lower = text_to_check.lower()
-    for pattern in HIGH_IMPACT_PATTERNS:
+    for pattern in RED_FOLDER_PATTERNS:
         if re.search(pattern, text_lower):
-            logger.debug(f"High impact event found: {event.get('summary', 'No title')}")
             return True
+    
+    return False
+
+
+def is_vip_medium_impact_event(event: Event) -> bool:
+    """Check if a medium impact event contains VIP keywords."""
+    text_to_check = ""
+    
+    # Get summary/title
+    if 'summary' in event:
+        text_to_check += str(event['summary']) + " "
+    
+    # Get description
+    if 'description' in event:
+        text_to_check += str(event['description']) + " "
+    
+    text_lower = text_to_check.lower()
+    
+    # First check if it's a medium impact event
+    is_medium_impact = False
+    for pattern in MEDIUM_IMPACT_PATTERNS:
+        if re.search(pattern, text_lower):
+            is_medium_impact = True
+            break
+    
+    # If it's medium impact, check for VIP keywords
+    if is_medium_impact:
+        for keyword in VIP_KEYWORDS:
+            if re.search(keyword, text_lower):
+                logger.debug(f"VIP medium impact event found: {event.get('summary', 'No title')}")
+                return True
+    
+    return False
+
+
+def should_include_event(event: Event) -> bool:
+    """Determine if an event should be included in the filtered calendar."""
+    # Include all red folder events
+    if is_red_folder_event(event):
+        logger.debug(f"Red folder event: {event.get('summary', 'No title')}")
+        return True
+    
+    # Include medium impact events with VIP keywords
+    if is_vip_medium_impact_event(event):
+        logger.debug(f"VIP medium impact event: {event.get('summary', 'No title')}")
+        return True
     
     return False
 
@@ -89,13 +185,9 @@ def generate_stable_uid(event: Event) -> str:
     return f"{uid_hash}@forex-factory-high-impact"
 
 
-def filter_high_impact_events(calendar_data: str) -> Calendar:
-    """Parse calendar and filter for high impact events."""
+def filter_enhanced_events(calendar_data_list: List[str]) -> Calendar:
+    """Parse multiple weeks of calendar data and filter for enhanced events."""
     try:
-        # Parse the original calendar
-        original_cal = Calendar.from_ical(calendar_data)
-        logger.info("Successfully parsed original calendar")
-        
         # Create new calendar for filtered events
         filtered_cal = Calendar()
         filtered_cal.add('prodid', PRODID)
@@ -105,22 +197,48 @@ def filter_high_impact_events(calendar_data: str) -> Calendar:
         filtered_cal.add('x-wr-calname', CALENDAR_NAME)
         filtered_cal.add('x-wr-timezone', 'America/Toronto')
         
-        high_impact_count = 0
+        total_included = 0
         total_events = 0
+        red_folder_count = 0
+        vip_medium_count = 0
+        seen_uids = set()  # To avoid duplicates across weeks
         
-        # Filter events
-        for component in original_cal.walk():
-            if component.name == "VEVENT":
-                total_events += 1
-                if is_high_impact_event(component):
-                    # Ensure the event has a UID
-                    if 'uid' not in component:
-                        component.add('uid', generate_stable_uid(component))
-                    
-                    filtered_cal.add_component(component)
-                    high_impact_count += 1
+        # Process each week's calendar data
+        for week_num, calendar_data in enumerate(calendar_data_list, 1):
+            try:
+                original_cal = Calendar.from_ical(calendar_data)
+                logger.info(f"Successfully parsed week {week_num} calendar")
+                
+                # Filter events from this week
+                for component in original_cal.walk():
+                    if component.name == "VEVENT":
+                        total_events += 1
+                        
+                        if should_include_event(component):
+                            # Ensure the event has a UID
+                            if 'uid' not in component:
+                                component.add('uid', generate_stable_uid(component))
+                            
+                            # Check for duplicates across weeks
+                            event_uid = str(component['uid'])
+                            if event_uid not in seen_uids:
+                                seen_uids.add(event_uid)
+                                filtered_cal.add_component(component)
+                                total_included += 1
+                                
+                                # Count event types
+                                if is_red_folder_event(component):
+                                    red_folder_count += 1
+                                elif is_vip_medium_impact_event(component):
+                                    vip_medium_count += 1
+                            
+            except Exception as e:
+                logger.warning(f"Failed to parse week {week_num} calendar: {e}")
+                continue
         
-        logger.info(f"Filtered {high_impact_count} high impact events from {total_events} total events")
+        logger.info(f"Filtered {total_included} events from {total_events} total events across {len(calendar_data_list)} weeks")
+        logger.info(f"  - {red_folder_count} red folder (high impact) events")
+        logger.info(f"  - {vip_medium_count} VIP medium impact events")
         return filtered_cal
         
     except Exception as e:
@@ -141,13 +259,13 @@ def save_calendar(calendar: Calendar, output_path: str) -> None:
 
 
 def main():
-    """Main function to fetch, filter, and save the calendar."""
+    """Main function to fetch, filter, and save the enhanced calendar."""
     try:
-        # Fetch calendar data
-        calendar_data = fetch_calendar_data(FOREX_FACTORY_ICS_URL)
+        # Fetch 3 weeks of calendar data
+        calendar_data_list = fetch_multi_week_calendar_data(weeks=3)
         
-        # Filter for high impact events
-        filtered_calendar = filter_high_impact_events(calendar_data)
+        # Filter for enhanced events (red folder + VIP medium impact)
+        filtered_calendar = filter_enhanced_events(calendar_data_list)
         
         # Save the filtered calendar
         save_calendar(filtered_calendar, OUTPUT_FILE)
@@ -155,6 +273,9 @@ def main():
         print(f"Generated file: {OUTPUT_FILE}")
         print(f"Published at: https://tashton13.github.io/forex-factory-high-impact/{OUTPUT_FILE}")
         print(f"Subscribed Google Calendar: {CALENDAR_NAME}")
+        print(f"Enhanced filtering: All red folder events + VIP medium impact events")
+        print(f"VIP Keywords: Trump, FOMC, OPEC, Lagarde, Bailey")
+        print(f"Coverage: 3 weeks ahead with daily updates")
         
     except Exception as e:
         logger.error(f"Script failed: {e}")

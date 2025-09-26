@@ -77,27 +77,37 @@ def fetch_multi_week_calendar_data(weeks: int = 3) -> str:
     """Fetch multiple weeks of calendar data and combine them."""
     all_calendar_data = []
     
-    # Week identifiers for Forex Factory
+    # Primary URL that definitely works
+    primary_url = f"{FOREX_FACTORY_BASE_URL}thisweek.ics"
+    
+    # Alternative URLs to try for more weeks
     week_urls = [
-        f"{FOREX_FACTORY_BASE_URL}thisweek.ics",
+        primary_url,
         f"{FOREX_FACTORY_BASE_URL}nextweek.ics",
-        f"{FOREX_FACTORY_BASE_URL}week3.ics"
+        f"{FOREX_FACTORY_BASE_URL}week3.ics",
+        f"{FOREX_FACTORY_BASE_URL}week2.ics",
+        "https://www.forexfactory.com/calendar.ics"
     ]
     
-    for i, url in enumerate(week_urls[:weeks]):
+    # Always fetch at least the current week
+    try:
+        logger.info("Fetching current week calendar data...")
+        data = fetch_calendar_data(primary_url)
+        all_calendar_data.append(data)
+    except Exception as e:
+        logger.error(f"Failed to fetch current week data: {e}")
+        raise Exception("Cannot proceed without current week data")
+    
+    # Try to fetch additional weeks
+    for i, url in enumerate(week_urls[1:weeks], 2):
         try:
-            logger.info(f"Fetching week {i+1} calendar data...")
+            logger.info(f"Attempting to fetch week {i} calendar data...")
             data = fetch_calendar_data(url)
             all_calendar_data.append(data)
         except Exception as e:
-            logger.warning(f"Failed to fetch week {i+1}: {e}")
-            # Continue with other weeks even if one fails
+            logger.warning(f"Week {i} not available ({e}), continuing with available data")
             continue
     
-    if not all_calendar_data:
-        raise Exception("Failed to fetch any calendar data")
-    
-    # Combine all calendar data (we'll parse and merge them properly later)
     logger.info(f"Successfully fetched {len(all_calendar_data)} weeks of calendar data")
     return all_calendar_data
 
@@ -123,8 +133,8 @@ def is_red_folder_event(event: Event) -> bool:
     return False
 
 
-def is_vip_medium_impact_event(event: Event) -> bool:
-    """Check if a medium impact event contains VIP keywords."""
+def is_vip_keyword_event(event: Event) -> bool:
+    """Check if an event contains VIP keywords (regardless of impact level)."""
     text_to_check = ""
     
     # Get summary/title
@@ -137,19 +147,11 @@ def is_vip_medium_impact_event(event: Event) -> bool:
     
     text_lower = text_to_check.lower()
     
-    # First check if it's a medium impact event
-    is_medium_impact = False
-    for pattern in MEDIUM_IMPACT_PATTERNS:
-        if re.search(pattern, text_lower):
-            is_medium_impact = True
-            break
-    
-    # If it's medium impact, check for VIP keywords
-    if is_medium_impact:
-        for keyword in VIP_KEYWORDS:
-            if re.search(keyword, text_lower):
-                logger.debug(f"VIP medium impact event found: {event.get('summary', 'No title')}")
-                return True
+    # Check for VIP keywords regardless of impact level
+    for keyword in VIP_KEYWORDS:
+        if re.search(keyword, text_lower):
+            logger.debug(f"VIP keyword event found: {event.get('summary', 'No title')} (keyword: {keyword})")
+            return True
     
     return False
 
@@ -161,9 +163,9 @@ def should_include_event(event: Event) -> bool:
         logger.debug(f"Red folder event: {event.get('summary', 'No title')}")
         return True
     
-    # Include medium impact events with VIP keywords
-    if is_vip_medium_impact_event(event):
-        logger.debug(f"VIP medium impact event: {event.get('summary', 'No title')}")
+    # Include ANY event with VIP keywords (regardless of impact level)
+    if is_vip_keyword_event(event):
+        logger.debug(f"VIP keyword event: {event.get('summary', 'No title')}")
         return True
     
     return False
@@ -200,7 +202,7 @@ def filter_enhanced_events(calendar_data_list: List[str]) -> Calendar:
         total_included = 0
         total_events = 0
         red_folder_count = 0
-        vip_medium_count = 0
+        vip_keyword_count = 0
         seen_uids = set()  # To avoid duplicates across weeks
         
         # Process each week's calendar data
@@ -229,8 +231,8 @@ def filter_enhanced_events(calendar_data_list: List[str]) -> Calendar:
                                 # Count event types
                                 if is_red_folder_event(component):
                                     red_folder_count += 1
-                                elif is_vip_medium_impact_event(component):
-                                    vip_medium_count += 1
+                                elif is_vip_keyword_event(component):
+                                    vip_keyword_count += 1
                             
             except Exception as e:
                 logger.warning(f"Failed to parse week {week_num} calendar: {e}")
@@ -238,7 +240,7 @@ def filter_enhanced_events(calendar_data_list: List[str]) -> Calendar:
         
         logger.info(f"Filtered {total_included} events from {total_events} total events across {len(calendar_data_list)} weeks")
         logger.info(f"  - {red_folder_count} red folder (high impact) events")
-        logger.info(f"  - {vip_medium_count} VIP medium impact events")
+        logger.info(f"  - {vip_keyword_count} VIP keyword events (any impact level)")
         return filtered_cal
         
     except Exception as e:
@@ -273,7 +275,7 @@ def main():
         print(f"Generated file: {OUTPUT_FILE}")
         print(f"Published at: https://tashton13.github.io/forex-factory-high-impact/{OUTPUT_FILE}")
         print(f"Subscribed Google Calendar: {CALENDAR_NAME}")
-        print(f"Enhanced filtering: All red folder events + VIP medium impact events")
+        print(f"Enhanced filtering: All red folder events + ALL VIP keyword events (any impact)")
         print(f"VIP Keywords: Trump, FOMC, OPEC, Lagarde, Bailey")
         print(f"Coverage: 3 weeks ahead with daily updates")
         

@@ -17,7 +17,7 @@ from forex_calendar_filter import (
     filter_enhanced_events,
     should_include_event,
     is_red_folder_event,
-    is_vip_medium_impact_event,
+    is_vip_keyword_event,
     generate_stable_uid,
     save_calendar
 )
@@ -52,13 +52,13 @@ class TestForexCalendarFilter:
         assert is_red_folder_event(event) == True
         assert should_include_event(event) == True
     
-    def test_vip_medium_impact_detection(self):
-        """Test detection of VIP medium impact events."""
+    def test_vip_keyword_detection(self):
+        """Test detection of VIP keyword events (any impact level)."""
         event = Event()
         event.add('summary', 'FOMC Meeting Minutes')
         event.add('description', 'Impact: Medium - Federal Reserve meeting')
         
-        assert is_vip_medium_impact_event(event) == True
+        assert is_vip_keyword_event(event) == True
         assert should_include_event(event) == True
     
     def test_trump_vip_keyword(self):
@@ -67,7 +67,16 @@ class TestForexCalendarFilter:
         event.add('summary', 'Trump Speech on Trade Policy')
         event.add('description', 'Impact: Medium - Presidential announcement')
         
-        assert is_vip_medium_impact_event(event) == True
+        assert is_vip_keyword_event(event) == True
+        assert should_include_event(event) == True
+    
+    def test_fomc_low_impact_inclusion(self):
+        """Test that FOMC events are included even if low impact."""
+        event = Event()
+        event.add('summary', 'FOMC Member Barkin Speaks')
+        event.add('description', 'Impact: Low - Federal Reserve member')
+        
+        assert is_vip_keyword_event(event) == True
         assert should_include_event(event) == True
     
     def test_low_impact_not_vip(self):
@@ -77,7 +86,7 @@ class TestForexCalendarFilter:
         event.add('description', 'Impact: Low - Minor indicator')
         
         assert is_red_folder_event(event) == False
-        assert is_vip_medium_impact_event(event) == False
+        assert is_vip_keyword_event(event) == False
         assert should_include_event(event) == False
     
     def test_medium_impact_without_vip(self):
@@ -87,7 +96,7 @@ class TestForexCalendarFilter:
         event.add('description', 'Impact: Medium - Housing statistics')
         
         assert is_red_folder_event(event) == False
-        assert is_vip_medium_impact_event(event) == False
+        assert is_vip_keyword_event(event) == False
         assert should_include_event(event) == False
     
     def test_filter_enhanced_events(self, sample_calendar_data):
@@ -188,21 +197,22 @@ class TestForexCalendarFilter:
             result = is_red_folder_event(event)
             assert result == expected, f"Red folder test failed for: {description}"
         
-        vip_medium_cases = [
+        vip_keyword_cases = [
             ('Impact: Medium - FOMC meeting', True),
-            ('Trump announcement - medium impact', True),
-            ('Governor Bailey speech - medium', True),
+            ('Trump announcement - low impact', True),  # Now includes low impact too!
+            ('Governor Bailey speech - high', True),
+            ('FOMC Member Barkin Speaks - Low impact', True),  # This should now work!
             ('impact: medium regular data', False),
-            ('low impact', False),
+            ('low impact housing', False),
         ]
         
-        for description, expected in vip_medium_cases:
+        for description, expected in vip_keyword_cases:
             event = Event()
             event.add('summary', 'Test Event')
             event.add('description', description)
             
-            result = is_vip_medium_impact_event(event)
-            assert result == expected, f"VIP medium test failed for: {description}"
+            result = is_vip_keyword_event(event)
+            assert result == expected, f"VIP keyword test failed for: {description}"
 
 
 if __name__ == "__main__":

@@ -1,0 +1,360 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//forex-factory-enhanced//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Enhanced Economic Events (3-Week Outlook)
+X-WR-TIMEZONE:America/Toronto
+BEGIN:VEVENT
+SUMMARY:⁂ AU RBA Gov Bullock Speaks
+DTSTART;TZID=America/New_York:20251027T041500
+DTEND;TZID=America/New_York:20251027T041500
+DTSTAMP:20251101T104216Z
+UID:148823
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/671-au-rba-gov-bullock-speaks
+URL:https://www.forexfactory.com/calendar/671-au-rba-gov-bullock-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ AU CPI q/q
+DTSTART;TZID=America/New_York:20251028T203000
+DTEND;TZID=America/New_York:20251028T203000
+DTSTAMP:20251101T104216Z
+UID:141632
+DESCRIPTION:Impact: High\n\nForecast: 1.1%\n\nPrevious: 0.7%\n\nView Event
+ : https://www.forexfactory.com/calendar/98-au-cpi-qq
+URL:https://www.forexfactory.com/calendar/98-au-cpi-qq
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ AU CPI y/y
+DTSTART;TZID=America/New_York:20251028T203000
+DTEND;TZID=America/New_York:20251028T203000
+DTSTAMP:20251101T104216Z
+UID:144090
+DESCRIPTION:Impact: High\n\nForecast: 3.1%\n\nPrevious: 3.0%\n\nView Event
+ : https://www.forexfactory.com/calendar/888-au-cpi-yy
+URL:https://www.forexfactory.com/calendar/888-au-cpi-yy
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ AU Trimmed Mean CPI q/q
+DTSTART;TZID=America/New_York:20251028T203000
+DTEND;TZID=America/New_York:20251028T203000
+DTSTAMP:20251101T104216Z
+UID:141636
+DESCRIPTION:Impact: High\n\nForecast: 0.8%\n\nPrevious: 0.6%\n\nView Event
+ : https://www.forexfactory.com/calendar/99-au-trimmed-mean-cpi-qq
+URL:https://www.forexfactory.com/calendar/99-au-trimmed-mean-cpi-qq
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ CA BOC Monetary Policy Report
+DTSTART;TZID=America/New_York:20251029T094500
+DTEND;TZID=America/New_York:20251029T094500
+DTSTAMP:20251101T104216Z
+UID:141398
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/414-ca-boc-monetary-policy-report
+URL:https://www.forexfactory.com/calendar/414-ca-boc-monetary-policy-repor
+ t
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ CA BOC Rate Statement
+DTSTART;TZID=America/New_York:20251029T094500
+DTEND;TZID=America/New_York:20251029T094500
+DTSTAMP:20251101T104216Z
+UID:141404
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/14-ca-boc-rate-statement
+URL:https://www.forexfactory.com/calendar/14-ca-boc-rate-statement
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ CA Overnight Rate
+DTSTART;TZID=America/New_York:20251029T094500
+DTEND;TZID=America/New_York:20251029T094500
+DTSTAMP:20251101T104216Z
+UID:141392
+DESCRIPTION:Impact: High\n\nForecast: 2.25%\n\nPrevious: 2.50%\n\nView Eve
+ nt: https://www.forexfactory.com/calendar/13-ca-overnight-rate
+URL:https://www.forexfactory.com/calendar/13-ca-overnight-rate
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ CA BOC Press Conference
+DTSTART;TZID=America/New_York:20251029T103000
+DTEND;TZID=America/New_York:20251029T103000
+DTSTAMP:20251101T104216Z
+UID:141409
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/471-ca-boc-press-conference
+URL:https://www.forexfactory.com/calendar/471-ca-boc-press-conference
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US Federal Funds Rate
+DTSTART;TZID=America/New_York:20251029T140000
+DTEND;TZID=America/New_York:20251029T140000
+DTSTAMP:20251101T104216Z
+UID:141213
+DESCRIPTION:Impact: High\n\nForecast: 4.00%\n\nPrevious: 4.25%\n\nView Eve
+ nt: https://www.forexfactory.com/calendar/1-us-federal-funds-rate
+URL:https://www.forexfactory.com/calendar/1-us-federal-funds-rate
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US FOMC Statement
+DTSTART;TZID=America/New_York:20251029T140000
+DTEND;TZID=America/New_York:20251029T140000
+DTSTAMP:20251101T104216Z
+UID:141221
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/4-us-fomc-statement
+URL:https://www.forexfactory.com/calendar/4-us-fomc-statement
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US FOMC Press Conference
+DTSTART;TZID=America/New_York:20251029T143000
+DTEND;TZID=America/New_York:20251029T143000
+DTSTAMP:20251101T104216Z
+UID:141229
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/512-us-fomc-press-conference
+URL:https://www.forexfactory.com/calendar/512-us-fomc-press-conference
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ JN BOJ Outlook Report
+DTSTART;TZID=America/New_York:20251029T231500
+DTEND;TZID=America/New_York:20251029T231500
+DTSTAMP:20251101T104216Z
+UID:144316
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/426-jn-boj-outlook-report
+URL:https://www.forexfactory.com/calendar/426-jn-boj-outlook-report
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ JN BOJ Policy Rate
+DTSTART;TZID=America/New_York:20251029T231500
+DTEND;TZID=America/New_York:20251029T231500
+DTSTAMP:20251101T104216Z
+UID:144317
+DESCRIPTION:Impact: High\n\nForecast: <0.50%\n\nPrevious: <0.50%\n\nView E
+ vent: https://www.forexfactory.com/calendar/641-jn-boj-policy-rate
+URL:https://www.forexfactory.com/calendar/641-jn-boj-policy-rate
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ JN Monetary Policy Statement
+DTSTART;TZID=America/New_York:20251029T231500
+DTEND;TZID=America/New_York:20251029T231500
+DTSTAMP:20251101T104216Z
+UID:144318
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/371-jn-monetary-policy-statement
+URL:https://www.forexfactory.com/calendar/371-jn-monetary-policy-statement
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ JN BOJ Press Conference
+DTSTART;TZID=America/New_York:20251030T023000
+DTEND;TZID=America/New_York:20251030T023000
+DTSTAMP:20251101T104216Z
+UID:144319
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/20-jn-boj-press-conference
+URL:https://www.forexfactory.com/calendar/20-jn-boj-press-conference
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ EZ Main Refinancing Rate
+DTSTART;TZID=America/New_York:20251030T091500
+DTEND;TZID=America/New_York:20251030T091500
+DTSTAMP:20251101T104216Z
+UID:142942
+DESCRIPTION:Impact: High\n\nForecast: 2.15%\n\nPrevious: 2.15%\n\nView Eve
+ nt: https://www.forexfactory.com/calendar/12-ez-main-refinancing-rate
+URL:https://www.forexfactory.com/calendar/12-ez-main-refinancing-rate
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ EZ Monetary Policy Statement
+DTSTART;TZID=America/New_York:20251030T091500
+DTEND;TZID=America/New_York:20251030T091500
+DTSTAMP:20251101T104216Z
+UID:142943
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/825-ez-monetary-policy-statement
+URL:https://www.forexfactory.com/calendar/825-ez-monetary-policy-statement
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ EZ ECB Press Conference
+DTSTART;TZID=America/New_York:20251030T094500
+DTEND;TZID=America/New_York:20251030T094500
+DTSTAMP:20251101T104216Z
+UID:142941
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/7-ez-ecb-press-conference
+URL:https://www.forexfactory.com/calendar/7-ez-ecb-press-conference
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Bowman Speaks
+DTSTART;TZID=America/New_York:20251030T095500
+DTEND;TZID=America/New_York:20251030T095500
+DTSTAMP:20251101T104216Z
+UID:149885
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/812-us-fomc-member-bowman-speaks
+URL:https://www.forexfactory.com/calendar/812-us-fomc-member-bowman-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Logan Speaks
+DTSTART;TZID=America/New_York:20251030T132000
+DTEND;TZID=America/New_York:20251030T132000
+DTSTAMP:20251101T104216Z
+UID:149501
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/890-us-fomc-member-logan-speaks
+URL:https://www.forexfactory.com/calendar/890-us-fomc-member-logan-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ CH Manufacturing PMI
+DTSTART;TZID=America/New_York:20251030T213000
+DTEND;TZID=America/New_York:20251030T213000
+DTSTAMP:20251101T104216Z
+UID:140686
+DESCRIPTION:Impact: High\n\nForecast: 49.6\n\nPrevious: 49.8\n\nView Event
+ : https://www.forexfactory.com/calendar/449-ch-manufacturing-pmi
+URL:https://www.forexfactory.com/calendar/449-ch-manufacturing-pmi
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ CA GDP m/m
+DTSTART;TZID=America/New_York:20251031T083000
+DTEND;TZID=America/New_York:20251031T083000
+DTSTAMP:20251101T104216Z
+UID:144965
+DESCRIPTION:Impact: High\n\nForecast: 0.0%\n\nPrevious: 0.2%\n\nView Event
+ : https://www.forexfactory.com/calendar/29-ca-gdp-mm
+URL:https://www.forexfactory.com/calendar/29-ca-gdp-mm
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Logan Speaks
+DTSTART;TZID=America/New_York:20251031T083000
+DTEND;TZID=America/New_York:20251031T083000
+DTSTAMP:20251101T104216Z
+UID:149502
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/890-us-fomc-member-logan-speaks
+URL:https://www.forexfactory.com/calendar/890-us-fomc-member-logan-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Bostic Speaks
+DTSTART;TZID=America/New_York:20251031T120000
+DTEND;TZID=America/New_York:20251031T120000
+DTSTAMP:20251101T104216Z
+UID:149504
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/725-us-fomc-member-bostic-speaks
+URL:https://www.forexfactory.com/calendar/725-us-fomc-member-bostic-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Hammack Speaks
+DTSTART;TZID=America/New_York:20251031T120000
+DTEND;TZID=America/New_York:20251031T120000
+DTSTAMP:20251101T104216Z
+UID:149503
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/913-us-fomc-member-hammack-speaks
+URL:https://www.forexfactory.com/calendar/913-us-fomc-member-hammack-speak
+ s
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

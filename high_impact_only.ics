@@ -1,0 +1,295 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//forex-factory-enhanced//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Enhanced Economic Events (3-Week Outlook)
+X-WR-TIMEZONE:America/Toronto
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Daly Speaks
+DTSTART;TZID=America/New_York:20251110T083000
+DTEND;TZID=America/New_York:20251110T083000
+DTSTAMP:20251115T104216Z
+UID:150850
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/807-us-fomc-member-daly-speaks
+URL:https://www.forexfactory.com/calendar/807-us-fomc-member-daly-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Musalem Speaks
+DTSTART;TZID=America/New_York:20251110T094500
+DTEND;TZID=America/New_York:20251110T094500
+DTSTAMP:20251115T104216Z
+UID:150851
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/911-us-fomc-member-musalem-speaks
+URL:https://www.forexfactory.com/calendar/911-us-fomc-member-musalem-speak
+ s
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ UK Claimant Count Change
+DTSTART;TZID=America/New_York:20251111T020000
+DTEND;TZID=America/New_York:20251111T020000
+DTSTAMP:20251115T104216Z
+UID:143812
+DESCRIPTION:Impact: High\n\nForecast: 17.6K\n\nPrevious: 25.8K\n\nView Eve
+ nt: https://www.forexfactory.com/calendar/68-uk-claimant-count-change
+URL:https://www.forexfactory.com/calendar/68-uk-claimant-count-change
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Barr Speaks
+DTSTART;TZID=America/New_York:20251111T222500
+DTEND;TZID=America/New_York:20251111T222500
+DTSTAMP:20251115T104216Z
+UID:150616
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/880-us-fomc-member-barr-speaks
+URL:https://www.forexfactory.com/calendar/880-us-fomc-member-barr-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Williams Speaks
+DTSTART;TZID=America/New_York:20251112T092000
+DTEND;TZID=America/New_York:20251112T092000
+DTSTAMP:20251115T104216Z
+UID:150357
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/518-us-fomc-member-williams-speaks
+URL:https://www.forexfactory.com/calendar/518-us-fomc-member-williams-spea
+ ks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Paulson Speaks
+DTSTART;TZID=America/New_York:20251112T100000
+DTEND;TZID=America/New_York:20251112T100000
+DTSTAMP:20251115T104216Z
+UID:150358
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/920-us-fomc-member-paulson-speaks
+URL:https://www.forexfactory.com/calendar/920-us-fomc-member-paulson-speak
+ s
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Waller Speaks
+DTSTART;TZID=America/New_York:20251112T102000
+DTEND;TZID=America/New_York:20251112T102000
+DTSTAMP:20251115T104216Z
+UID:150618
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/839-us-fomc-member-waller-speaks
+URL:https://www.forexfactory.com/calendar/839-us-fomc-member-waller-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Bostic Speaks
+DTSTART;TZID=America/New_York:20251112T121500
+DTEND;TZID=America/New_York:20251112T121500
+DTSTAMP:20251115T104216Z
+UID:150359
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/725-us-fomc-member-bostic-speaks
+URL:https://www.forexfactory.com/calendar/725-us-fomc-member-bostic-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Miran Speaks
+DTSTART;TZID=America/New_York:20251112T123000
+DTEND;TZID=America/New_York:20251112T123000
+DTSTAMP:20251115T104216Z
+UID:150849
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/926-us-fomc-member-miran-speaks
+URL:https://www.forexfactory.com/calendar/926-us-fomc-member-miran-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Collins Speaks
+DTSTART;TZID=America/New_York:20251112T160000
+DTEND;TZID=America/New_York:20251112T160000
+DTSTAMP:20251115T104216Z
+UID:150852
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/882-us-fomc-member-collins-speaks
+URL:https://www.forexfactory.com/calendar/882-us-fomc-member-collins-speak
+ s
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ AU Employment Change
+DTSTART;TZID=America/New_York:20251112T193000
+DTEND;TZID=America/New_York:20251112T193000
+DTSTAMP:20251115T104216Z
+UID:144166
+DESCRIPTION:Impact: High\n\nForecast: 20.0K\n\nPrevious: 14.9K\n\nView Eve
+ nt: https://www.forexfactory.com/calendar/73-au-employment-change
+URL:https://www.forexfactory.com/calendar/73-au-employment-change
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ AU Unemployment Rate
+DTSTART;TZID=America/New_York:20251112T193000
+DTEND;TZID=America/New_York:20251112T193000
+DTSTAMP:20251115T104216Z
+UID:144178
+DESCRIPTION:Impact: High\n\nForecast: 4.4%\n\nPrevious: 4.5%\n\nView Event
+ : https://www.forexfactory.com/calendar/64-au-unemployment-rate
+URL:https://www.forexfactory.com/calendar/64-au-unemployment-rate
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ UK GDP m/m
+DTSTART;TZID=America/New_York:20251113T020000
+DTEND;TZID=America/New_York:20251113T020000
+DTSTAMP:20251115T104216Z
+UID:143749
+DESCRIPTION:Impact: High\n\nForecast: 0.0%\n\nPrevious: 0.1%\n\nView Event
+ : https://www.forexfactory.com/calendar/804-uk-gdp-mm
+URL:https://www.forexfactory.com/calendar/804-uk-gdp-mm
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Daly Speaks
+DTSTART;TZID=America/New_York:20251113T080000
+DTEND;TZID=America/New_York:20251113T080000
+DTSTAMP:20251115T104216Z
+UID:150853
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/807-us-fomc-member-daly-speaks
+URL:https://www.forexfactory.com/calendar/807-us-fomc-member-daly-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Kashkari Speaks
+DTSTART;TZID=America/New_York:20251113T103000
+DTEND;TZID=America/New_York:20251113T103000
+DTSTAMP:20251115T104216Z
+UID:150854
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/651-us-fomc-member-kashkari-speaks
+URL:https://www.forexfactory.com/calendar/651-us-fomc-member-kashkari-spea
+ ks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Musalem Speaks
+DTSTART;TZID=America/New_York:20251113T121500
+DTEND;TZID=America/New_York:20251113T121500
+DTSTAMP:20251115T104216Z
+UID:150362
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/911-us-fomc-member-musalem-speaks
+URL:https://www.forexfactory.com/calendar/911-us-fomc-member-musalem-speak
+ s
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Hammack Speaks
+DTSTART;TZID=America/New_York:20251113T122000
+DTEND;TZID=America/New_York:20251113T122000
+DTSTAMP:20251115T104216Z
+UID:150615
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/913-us-fomc-member-hammack-speaks
+URL:https://www.forexfactory.com/calendar/913-us-fomc-member-hammack-speak
+ s
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Schmid Speaks
+DTSTART;TZID=America/New_York:20251114T100500
+DTEND;TZID=America/New_York:20251114T100500
+DTSTAMP:20251115T104216Z
+UID:150364
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/912-us-fomc-member-schmid-speaks
+URL:https://www.forexfactory.com/calendar/912-us-fomc-member-schmid-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Logan Speaks
+DTSTART;TZID=America/New_York:20251114T143000
+DTEND;TZID=America/New_York:20251114T143000
+DTSTAMP:20251115T104216Z
+UID:150621
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/890-us-fomc-member-logan-speaks
+URL:https://www.forexfactory.com/calendar/890-us-fomc-member-logan-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Bostic Speaks
+DTSTART;TZID=America/New_York:20251114T152000
+DTEND;TZID=America/New_York:20251114T152000
+DTSTAMP:20251115T104216Z
+UID:150363
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/725-us-fomc-member-bostic-speaks
+URL:https://www.forexfactory.com/calendar/725-us-fomc-member-bostic-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

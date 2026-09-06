@@ -1,0 +1,163 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//forex-factory-enhanced//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Enhanced Economic Events (3-Week Outlook)
+X-WR-TIMEZONE:America/Toronto
+BEGIN:VEVENT
+SUMMARY:⁂ EZ Main Refinancing Rate
+DTSTART;TZID=America/New_York:20260910T081500
+DTEND;TZID=America/New_York:20260910T081500
+DTSTAMP:20260906T134217Z
+UID:150538
+DESCRIPTION:Impact: High\n\nForecast: 2.65%\n\nPrevious: 2.40%\n\nView Eve
+ nt: https://www.forexfactory.com/calendar/12-ez-main-refinancing-rate
+URL:https://www.forexfactory.com/calendar/12-ez-main-refinancing-rate
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ EZ Monetary Policy Statement
+DTSTART;TZID=America/New_York:20260910T081500
+DTEND;TZID=America/New_York:20260910T081500
+DTSTAMP:20260906T134217Z
+UID:150539
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/825-ez-monetary-policy-statement
+URL:https://www.forexfactory.com/calendar/825-ez-monetary-policy-statement
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US Core PPI m/m
+DTSTART;TZID=America/New_York:20260910T083000
+DTEND;TZID=America/New_York:20260910T083000
+DTSTAMP:20260906T134217Z
+UID:148403
+DESCRIPTION:Impact: High\n\nForecast: 0.3%\n\nPrevious: 0.2%\n\nView Event
+ : https://www.forexfactory.com/calendar/87-us-core-ppi-mm
+URL:https://www.forexfactory.com/calendar/87-us-core-ppi-mm
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US PPI m/m
+DTSTART;TZID=America/New_York:20260910T083000
+DTEND;TZID=America/New_York:20260910T083000
+DTSTAMP:20260906T134217Z
+UID:148388
+DESCRIPTION:Impact: High\n\nForecast: 0.4%\n\nPrevious: 0.0%\n\nView Event
+ : https://www.forexfactory.com/calendar/86-us-ppi-mm
+URL:https://www.forexfactory.com/calendar/86-us-ppi-mm
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ EZ ECB Press Conference
+DTSTART;TZID=America/New_York:20260910T084500
+DTEND;TZID=America/New_York:20260910T084500
+DTSTAMP:20260906T134217Z
+UID:150537
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/7-ez-ecb-press-conference
+URL:https://www.forexfactory.com/calendar/7-ez-ecb-press-conference
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ UK GDP m/m
+DTSTART;TZID=America/New_York:20260911T020000
+DTEND;TZID=America/New_York:20260911T020000
+DTSTAMP:20260906T134217Z
+UID:151558
+DESCRIPTION:Impact: High\n\nForecast: 0.0%\n\nPrevious: 0.3%\n\nView Event
+ : https://www.forexfactory.com/calendar/804-uk-gdp-mm
+URL:https://www.forexfactory.com/calendar/804-uk-gdp-mm
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US Core CPI m/m
+DTSTART;TZID=America/New_York:20260911T083000
+DTEND;TZID=America/New_York:20260911T083000
+DTSTAMP:20260906T134217Z
+UID:148367
+DESCRIPTION:Impact: High\n\nForecast: 0.2%\n\nPrevious: 0.2%\n\nView Event
+ : https://www.forexfactory.com/calendar/79-us-core-cpi-mm
+URL:https://www.forexfactory.com/calendar/79-us-core-cpi-mm
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US Core CPI y/y
+DTSTART;TZID=America/New_York:20260911T083000
+DTEND;TZID=America/New_York:20260911T083000
+DTSTAMP:20260906T134217Z
+UID:153056
+DESCRIPTION:Impact: High\n\nForecast: 2.4%\n\nPrevious: 2.5%\n\nView Event
+ : https://www.forexfactory.com/calendar/933-us-core-cpi-yy
+URL:https://www.forexfactory.com/calendar/933-us-core-cpi-yy
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US CPI m/m
+DTSTART;TZID=America/New_York:20260911T083000
+DTEND;TZID=America/New_York:20260911T083000
+DTSTAMP:20260906T134217Z
+UID:148336
+DESCRIPTION:Impact: High\n\nForecast: 0.4%\n\nPrevious: 0.1%\n\nView Event
+ : https://www.forexfactory.com/calendar/78-us-cpi-mm
+URL:https://www.forexfactory.com/calendar/78-us-cpi-mm
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US CPI y/y
+DTSTART;TZID=America/New_York:20260911T083000
+DTEND;TZID=America/New_York:20260911T083000
+DTSTAMP:20260906T134217Z
+UID:148351
+DESCRIPTION:Impact: High\n\nForecast: 3.4%\n\nPrevious: 3.4%\n\nView Event
+ : https://www.forexfactory.com/calendar/884-us-cpi-yy
+URL:https://www.forexfactory.com/calendar/884-us-cpi-yy
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁑ EZ ECB President Lagarde Speaks
+DTSTART;TZID=America/New_York:20260912T033000
+DTEND;TZID=America/New_York:20260912T033000
+DTSTAMP:20260906T134217Z
+UID:153457
+DESCRIPTION:Impact: Medium\n\nView Event: https://www.forexfactory.com/cal
+ endar/832-ez-ecb-president-lagarde-speaks
+URL:https://www.forexfactory.com/calendar/832-ez-ecb-president-lagarde-spe
+ aks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

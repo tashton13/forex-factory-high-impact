@@ -1,0 +1,374 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//forex-factory-enhanced//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Enhanced Economic Events (3-Week Outlook)
+X-WR-TIMEZONE:America/Toronto
+BEGIN:VEVENT
+SUMMARY:⁂ AU CPI m/m
+DTSTART;TZID=America/New_York:20261027T203000
+DTEND;TZID=America/New_York:20261027T203000
+DTSTAMP:20261031T154218Z
+UID:149108
+DESCRIPTION:Impact: High\n\nForecast: 0.7%\n\nPrevious: 0.4%\n\nView Event
+ : https://www.forexfactory.com/calendar/98-au-cpi-mm
+URL:https://www.forexfactory.com/calendar/98-au-cpi-mm
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ AU CPI y/y
+DTSTART;TZID=America/New_York:20261027T203000
+DTEND;TZID=America/New_York:20261027T203000
+DTSTAMP:20261031T154218Z
+UID:149101
+DESCRIPTION:Impact: High\n\nForecast: 4.2%\n\nPrevious: 4.0%\n\nView Event
+ : https://www.forexfactory.com/calendar/888-au-cpi-yy
+URL:https://www.forexfactory.com/calendar/888-au-cpi-yy
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ AU Trimmed Mean CPI m/m
+DTSTART;TZID=America/New_York:20261027T203000
+DTEND;TZID=America/New_York:20261027T203000
+DTSTAMP:20261031T154218Z
+UID:149112
+DESCRIPTION:Impact: High\n\nForecast: 0.3%\n\nPrevious: 0.2%\n\nView Event
+ : https://www.forexfactory.com/calendar/99-au-trimmed-mean-cpi-mm
+URL:https://www.forexfactory.com/calendar/99-au-trimmed-mean-cpi-mm
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ NZ Official Cash Rate
+DTSTART;TZID=America/New_York:20261027T210000
+DTEND;TZID=America/New_York:20261027T210000
+DTSTAMP:20261031T154218Z
+UID:148868
+DESCRIPTION:Impact: High\n\nForecast: 3.00%\n\nPrevious: 2.75%\n\nView Eve
+ nt: https://www.forexfactory.com/calendar/23-nz-official-cash-rate
+URL:https://www.forexfactory.com/calendar/23-nz-official-cash-rate
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ NZ RBNZ Rate Statement
+DTSTART;TZID=America/New_York:20261027T210000
+DTEND;TZID=America/New_York:20261027T210000
+DTSTAMP:20261031T154218Z
+UID:148869
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/24-nz-rbnz-rate-statement
+URL:https://www.forexfactory.com/calendar/24-nz-rbnz-rate-statement
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ NZ RBNZ Press Conference
+DTSTART;TZID=America/New_York:20261027T220000
+DTEND;TZID=America/New_York:20261027T220000
+DTSTAMP:20261031T154218Z
+UID:152807
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/406-nz-rbnz-press-conference
+URL:https://www.forexfactory.com/calendar/406-nz-rbnz-press-conference
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ UK Annual Budget Release
+DTSTART;TZID=America/New_York:20261028T083000
+DTEND;TZID=America/New_York:20261028T083000
+DTSTAMP:20261031T154218Z
+UID:155200
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/428-uk-annual-budget-release
+URL:https://www.forexfactory.com/calendar/428-uk-annual-budget-release
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ CA BOC Monetary Policy Report
+DTSTART;TZID=America/New_York:20261028T094500
+DTEND;TZID=America/New_York:20261028T094500
+DTSTAMP:20261031T154218Z
+UID:146550
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/414-ca-boc-monetary-policy-report
+URL:https://www.forexfactory.com/calendar/414-ca-boc-monetary-policy-repor
+ t
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ CA BOC Rate Statement
+DTSTART;TZID=America/New_York:20261028T094500
+DTEND;TZID=America/New_York:20261028T094500
+DTSTAMP:20261031T154218Z
+UID:146545
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/14-ca-boc-rate-statement
+URL:https://www.forexfactory.com/calendar/14-ca-boc-rate-statement
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ CA Overnight Rate
+DTSTART;TZID=America/New_York:20261028T094500
+DTEND;TZID=America/New_York:20261028T094500
+DTSTAMP:20261031T154218Z
+UID:146537
+DESCRIPTION:Impact: High\n\nForecast: 2.50%\n\nPrevious: 2.25%\n\nView Eve
+ nt: https://www.forexfactory.com/calendar/13-ca-overnight-rate
+URL:https://www.forexfactory.com/calendar/13-ca-overnight-rate
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ CA BOC Press Conference
+DTSTART;TZID=America/New_York:20261028T103000
+DTEND;TZID=America/New_York:20261028T103000
+DTSTAMP:20261031T154218Z
+UID:146557
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/471-ca-boc-press-conference
+URL:https://www.forexfactory.com/calendar/471-ca-boc-press-conference
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US Federal Funds Rate
+DTSTART;TZID=America/New_York:20261028T140000
+DTEND;TZID=America/New_York:20261028T140000
+DTSTAMP:20261031T154218Z
+UID:146500
+DESCRIPTION:Impact: High\n\nForecast: 4.00%\n\nPrevious: 4.00%\n\nView Eve
+ nt: https://www.forexfactory.com/calendar/1-us-federal-funds-rate
+URL:https://www.forexfactory.com/calendar/1-us-federal-funds-rate
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US FOMC Statement
+DTSTART;TZID=America/New_York:20261028T140000
+DTEND;TZID=America/New_York:20261028T140000
+DTSTAMP:20261031T154218Z
+UID:146508
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/4-us-fomc-statement
+URL:https://www.forexfactory.com/calendar/4-us-fomc-statement
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US FOMC Press Conference
+DTSTART;TZID=America/New_York:20261028T143000
+DTEND;TZID=America/New_York:20261028T143000
+DTSTAMP:20261031T154218Z
+UID:146520
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/512-us-fomc-press-conference
+URL:https://www.forexfactory.com/calendar/512-us-fomc-press-conference
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US Advance GDP q/q
+DTSTART;TZID=America/New_York:20261029T083000
+DTEND;TZID=America/New_York:20261029T083000
+DTSTAMP:20261031T154218Z
+UID:148274
+DESCRIPTION:Impact: High\n\nForecast: 3.2%\n\nPrevious: 1.5%\n\nView Event
+ : https://www.forexfactory.com/calendar/2-us-advance-gdp-qq
+URL:https://www.forexfactory.com/calendar/2-us-advance-gdp-qq
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ US Core PCE Price Index m/m
+DTSTART;TZID=America/New_York:20261029T083000
+DTEND;TZID=America/New_York:20261029T083000
+DTSTAMP:20261031T154218Z
+UID:148236
+DESCRIPTION:Impact: High\n\nForecast: 0.3%\n\nPrevious: 0.2%\n\nView Event
+ : https://www.forexfactory.com/calendar/85-us-core-pce-price-index-mm
+URL:https://www.forexfactory.com/calendar/85-us-core-pce-price-index-mm
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ EZ Main Refinancing Rate
+DTSTART;TZID=America/New_York:20261029T091500
+DTEND;TZID=America/New_York:20261029T091500
+DTSTAMP:20261031T154218Z
+UID:150541
+DESCRIPTION:Impact: High\n\nForecast: 2.65%\n\nPrevious: 2.65%\n\nView Eve
+ nt: https://www.forexfactory.com/calendar/12-ez-main-refinancing-rate
+URL:https://www.forexfactory.com/calendar/12-ez-main-refinancing-rate
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ EZ Monetary Policy Statement
+DTSTART;TZID=America/New_York:20261029T091500
+DTEND;TZID=America/New_York:20261029T091500
+DTSTAMP:20261031T154218Z
+UID:150542
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/825-ez-monetary-policy-statement
+URL:https://www.forexfactory.com/calendar/825-ez-monetary-policy-statement
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ EZ ECB Press Conference
+DTSTART;TZID=America/New_York:20261029T094500
+DTEND;TZID=America/New_York:20261029T094500
+DTSTAMP:20261031T154218Z
+UID:150540
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/7-ez-ecb-press-conference
+URL:https://www.forexfactory.com/calendar/7-ez-ecb-press-conference
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ JN BOJ Outlook Report
+DTSTART;TZID=America/New_York:20261029T230200
+DTEND;TZID=America/New_York:20261029T230200
+DTSTAMP:20261031T154218Z
+UID:148564
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/426-jn-boj-outlook-report
+URL:https://www.forexfactory.com/calendar/426-jn-boj-outlook-report
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ JN BOJ Policy Rate
+DTSTART;TZID=America/New_York:20261029T230200
+DTEND;TZID=America/New_York:20261029T230200
+DTSTAMP:20261031T154218Z
+UID:148562
+DESCRIPTION:Impact: High\n\nForecast: <1.25%\n\nPrevious: <1.25%\n\nView E
+ vent: https://www.forexfactory.com/calendar/641-jn-boj-policy-rate
+URL:https://www.forexfactory.com/calendar/641-jn-boj-policy-rate
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ JN Monetary Policy Statement
+DTSTART;TZID=America/New_York:20261029T230200
+DTEND;TZID=America/New_York:20261029T230200
+DTSTAMP:20261031T154218Z
+UID:148563
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/371-jn-monetary-policy-statement
+URL:https://www.forexfactory.com/calendar/371-jn-monetary-policy-statement
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁂ JN BOJ Press Conference
+DTSTART;TZID=America/New_York:20261030T023000
+DTEND;TZID=America/New_York:20261030T023000
+DTSTAMP:20261031T154218Z
+UID:148565
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calen
+ dar/20-jn-boj-press-conference
+URL:https://www.forexfactory.com/calendar/20-jn-boj-press-conference
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Daly Speaks
+DTSTART;TZID=America/New_York:20261030T120000
+DTEND;TZID=America/New_York:20261030T120000
+DTSTAMP:20261031T154218Z
+UID:155203
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/807-us-fomc-member-daly-speaks
+URL:https://www.forexfactory.com/calendar/807-us-fomc-member-daly-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Musalem Speaks
+DTSTART;TZID=America/New_York:20261030T123000
+DTEND;TZID=America/New_York:20261030T123000
+DTSTAMP:20261031T154218Z
+UID:155204
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/911-us-fomc-member-musalem-speaks
+URL:https://www.forexfactory.com/calendar/911-us-fomc-member-musalem-speak
+ s
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⁎ US FOMC Member Logan Speaks
+DTSTART;TZID=America/New_York:20261030T133000
+DTEND;TZID=America/New_York:20261030T133000
+DTSTAMP:20261031T154218Z
+UID:155386
+DESCRIPTION:Impact: Low\n\nView Event: https://www.forexfactory.com/calend
+ ar/890-us-fomc-member-logan-speaks
+URL:https://www.forexfactory.com/calendar/890-us-fomc-member-logan-speaks
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
